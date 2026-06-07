@@ -10,9 +10,9 @@ let todos = [
     { date: "2026-06-10", task: "ለተመራቂዎች ስጦታ መግዛት", assigned_to: "ዜና", status: "pending", checked: false },
     { date: "2026-06-10", task: "ሰኔ ሚካኤል ፓስተር መስራት ", assigned_to: "ተስፋዬ", status: "pending", checked: false },
     { date: "2026-06-10", task: "መንገድ ማዘጋት", assigned_to: "ዜና", status: "pending", checked: false },
-    { date: "2026-06-10", task: "ኦዲት ቁጥጥር  ስብሰባ መጥራት", assigned_to: "ዜና", status: "pending", checked: false },
-    { date: "2026-06-16", task: "የሰበካ ተመራጭ የስራ ድርሻ ለሃገረ ስብከት መጻፍ ", assigned_to: "ዜና", status: "pending", checked: false },
-    { date: "2026-06-16", task: "የካህናት ደሞዝ ታክስ ፋይል ", assigned_to: "ዜና", status: "pending", checked: false }
+    { date: "2026-06-10", task: "ኦዲት ቁጥጥር  ስብሰባ መጥራት", assigned_to: "ሰበካ ጉባኤ", status: "pending", checked: false },
+    { date: "2026-06-16", task: "የሰበካ ተመራጭ የስራ ድርሻ ለሃገረ ስብከት መጻፍ ", assigned_to: "ፀጋ", status: "pending", checked: false },
+    { date: "2026-06-16", task: "የካህናት ደሞዝ ታክስ ፋይል ", assigned_to: "ዜና እና ታሪክ", status: "pending", checked: false }
 
 ];
 
