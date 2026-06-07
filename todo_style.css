@@ -153,3 +153,16 @@ h1 {
 .btn-done:active {
     background: #1976D2;
 }
+
+.section-label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #e65100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 16px 0 8px;
+}
+
+.done-label {
+    color: #2e7d32;
+}
