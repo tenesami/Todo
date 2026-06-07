@@ -9,36 +9,35 @@ let todos = [
 ];
 
 function render() {
-    const tbody = document.getElementById("taskBody");
-    tbody.innerHTML = "";
+    const list = document.getElementById("taskList");
+    list.innerHTML = "";
     todos.forEach((t, i) => {
-                const crossed = t.checked ? "crossed" : "";
-                tbody.innerHTML += `
-      <tr class="${crossed}">
-        <td>${i + 1}</td>
-        <td>${t.date}</td>
-        <td>${t.task}</td>
-        <td>${t.assigned_to}</td>
-        <td class="status-${t.status}">${t.status}</td>
-        <td>
+                list.innerHTML += `
+      <div class="task-card ${t.checked ? "crossed" : ""}">
+        <input class="task-checkbox" type="checkbox" ${t.checked ? "checked" : ""} onchange="toggleCross(${i}, this.checked)" />
+        <div class="task-body">
+          <div class="task-name">${t.task}</div>
+          <div class="task-meta">📅 ${t.date} &nbsp;👤 ${t.assigned_to}</div>
+        </div>
+        <div class="task-actions">
+          <span class="badge badge-${t.status}">${t.status}</span>
           ${t.status === "pending" ? `<button class="btn-done" onclick="markDone(${i})">Done</button>` : ""}
-          <input type="checkbox" title="Cross out" ${t.checked ? "checked" : ""} onchange="toggleCross(${i}, this.checked)" />
-        </td>
-      </tr>`;
+        </div>
+      </div>`;
   });
 }
  
 function addTask() {
-  const date       = document.getElementById("date").value;
-  const task       = document.getElementById("task").value.trim();
-  const assigned   = document.getElementById("assigned").value.trim();
+  const date     = document.getElementById("date").value;
+  const task     = document.getElementById("task").value.trim();
+  const assigned = document.getElementById("assigned").value.trim();
  
   if (!date || !task || !assigned) {
     alert("Please fill in all fields.");
     return;
   }
  
-  todos.push({ date, task, assigned_to: assigned, status: "pending" });
+  todos.unshift({ date, task, assigned_to: assigned, status: "pending", checked: false });
   document.getElementById("date").value     = "";
   document.getElementById("task").value     = "";
   document.getElementById("assigned").value = "";
