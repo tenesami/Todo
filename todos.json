@@ -1,0 +1,33 @@
+{
+    "todos": [{
+            "date": "2026-06-01",
+            "task": "Create To Do List",
+            "assigned_to": "Tesfaye",
+            "status": "done"
+        },
+        {
+            "date": "2026-06-03",
+            "task": "Submit HW2",
+            "assigned_to": "Tesfaye",
+            "status": "done"
+        },
+        {
+            "date": "2026-06-05",
+            "task": "Study for midterm",
+            "assigned_to": "Tesfaye",
+            "status": "pending"
+        },
+        {
+            "date": "2026-06-06",
+            "task": "Clean the house",
+            "assigned_to": "Tesfaye",
+            "status": "pending"
+        },
+        {
+            "date": "2026-06-07",
+            "task": "Call mom",
+            "assigned_to": "Tesfaye",
+            "status": "pending"
+        }
+    ]
+}
