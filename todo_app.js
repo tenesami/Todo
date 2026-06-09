@@ -3,7 +3,7 @@ let todos = [
     { date: "2026-06-07", task: "ሰኔ ሚካኤል በአል በአውደ ምህረት ማስነገር", assigned_to: "ሰበካ ጉባኤ", status: "done", checked: true },
     { date: "2026-06-07", task: "ተመራቂ ልጆች እንዲያስመዘግቡ በአውደ ምህረት ማስነገር", assigned_to: "ሰበካ ጉባኤ", status: "done", checked: true },
     { date: "2026-06-07", task: "ርክክብ", assigned_to: "ሰበካ ጉባኤ", status: "done", checked: true },
-    { date: "2026-06-08", task: "በዓል ኮሚቴ መጥራት", assigned_to: "ሰበካ ጉባኤ", status: "pending", checked: false },
+    { date: "2026-06-08", task: "በዓል ኮሚቴ መጥራት", assigned_to: "ሰበካ ጉባኤ", status: "done", checked: true },
     { date: "2026-06-09", task: "ቅዲስ ሚካኤል ጽዋ ማህበር ሙሴ መጥራት", assigned_to: "ሰበካ ጉባኤ", status: "pending", checked: false },
     { date: "2026-06-10", task: "ተመራቂ ልጆቻቸውን እንዲያስመዘግቡ ለወላጆች ደብዳቤ መጻፍ", assigned_to: "ፀጋ", status: "pending", checked: false },
     { date: "2026-06-10", task: "ለአቡነ ናትናኤል እና ለዘማሪው ቲኬት መቁረጥ ", assigned_to: "ዜና", status: "pending", checked: false },
