@@ -5,13 +5,13 @@ let todos = [
     { date: "2026-06-07", task: "ርክክብ", assigned_to: "ሰበካ ጉባኤ", status: "done", checked: true },
     { date: "2026-06-08", task: "በዓል ኮሚቴ መጥራት", assigned_to: "ሰበካ ጉባኤ", status: "done", checked: true },
     { date: "2026-06-09", task: "ቅዲስ ሚካኤል ጽዋ ማህበር ሙሴ መጥራት", assigned_to: "ሰበካ ጉባኤ", status: "pending", checked: false },
-    { date: "2026-06-10", task: "ተመራቂ ልጆቻቸውን እንዲያስመዘግቡ ለወላጆች ደብዳቤ መጻፍ", assigned_to: "ፀጋ", status: "pending", checked: false },
+    { date: "2026-06-10", task: "ተመራቂ ልጆቻቸውን እንዲያስመዘግቡ ለወላጆች ደብዳቤ መጻፍ", assigned_to: "ፀጋ", status: "done", checked: true },
     { date: "2026-06-10", task: "ለአቡነ ናትናኤል እና ለዘማሪው ቲኬት መቁረጥ ", assigned_to: "ዜና", status: "pending", checked: false },
     { date: "2026-06-10", task: "ለተመራቂዎች ስጦታ መግዛት", assigned_to: "ዜና", status: "pending", checked: false },
     { date: "2026-06-10", task: "ሰኔ ሚካኤል ፓስተር መስራት ", assigned_to: "ተስፋዬ", status: "pending", checked: false },
     { date: "2026-06-10", task: "መንገድ ማዘጋት", assigned_to: "ዜና", status: "pending", checked: false },
     { date: "2026-06-10", task: "ኦዲት ቁጥጥር  ስብሰባ መጥራት", assigned_to: "ሰበካ ጉባኤ", status: "pending", checked: false },
-    { date: "2026-06-16", task: "የሰበካ ተመራጭ የስራ ድርሻ ለሃገረ ስብከት መጻፍ ", assigned_to: "ፀጋ", status: "pending", checked: false },
+    { date: "2026-06-16", task: "የሰበካ ተመራጭ የስራ ድርሻ ለሃገረ ስብከት መጻፍ ", assigned_to: "ፀጋ", status: "done", checked: true },
     { date: "2026-06-16", task: "የካህናት ደሞዝ ታክስ ፋይል ", assigned_to: "ዜና እና ታሪክ", status: "pending", checked: false }
 
 ];
