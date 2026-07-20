@@ -5,7 +5,7 @@ const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 let todos = [
     { date: "2026-08-16", task: "የካህናት ደሞዝ ታክስ ፋይል ", assigned_to: "ዜና እና ታሪክ", status: "pending", checked: false },
     { date: "2026-08-01", task: "መስታወቱን ማሰራት", assigned_to: "ተስፋዬ እና ሸዋ", status: "pending", checked: false },
-    { date: "2026-07-01", task: "የሽልማት ስጦታ ማዘጋጀት", assigned_to: "ቀሲስ ሰለሞን ተስፋዬ እና ጸጋ", status: "pending", checked: false },
+    { date: "2026-07-01", task: "የሽልማት ስጦታ ማዘጋጀት", assigned_to: "ቀሲስ ሰለሞን ተስፋዬ እና ጸጋ", status: "pending", checked: false }
 ];
 
 // ------------------------------------------------------------
