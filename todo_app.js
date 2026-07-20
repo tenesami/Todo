@@ -1,6 +1,6 @@
 const SUPABASE_URL = 'https://bfqbxxfrkvlpoizwjroe.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_Bs9RN_lqOeQD0974HzKF7w_-wFGsQBr';
-const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 let todos = [
     { date: "2026-08-16", task: "የካህናት ደሞዝ ታክስ ፋይል ", assigned_to: "ዜና እና ታሪክ", status: "pending", checked: false },
@@ -13,7 +13,7 @@ let todos = [
 // Fetches all tasks from Supabase and re-renders.
 // ------------------------------------------------------------
 async function loadTasks() {
-    const { data, error } = await supabase
+    const { data, error } = await supabaseClient
         .from('todos')
         .select('*')
         .order('created_at', { ascending: false });
@@ -92,7 +92,7 @@ async function addTask() {
     return;
   }
 
-  const { error } = await supabase
+  const { error } = await supabaseClient
     .from('todos')
     .insert([{ date, task, assigned_to: assigned, status: "pending", checked: false }]);
 
@@ -111,7 +111,7 @@ async function addTask() {
 // ------------------------------------------------------------
 async function markDone(i) {
   const id = todos[i].id;
-  const { error } = await supabase
+  const { error } = await supabaseClient
     .from('todos')
     .update({ status: "done" })
     .eq('id', id);
@@ -126,7 +126,7 @@ async function markDone(i) {
 // ------------------------------------------------------------
 async function toggleCross(i, checked) {
   const id = todos[i].id;
-  const { error } = await supabase
+  const { error } = await supabaseClient
     .from('todos')
     .update({ checked })
     .eq('id', id);
