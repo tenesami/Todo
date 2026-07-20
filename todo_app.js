@@ -1,5 +1,5 @@
 const SUPABASE_URL = 'https://bfqbxxfrkvlpoizwjroe.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_Bs9RN_lqOeQD0974HzKF7w';
+const SUPABASE_KEY = 'sb_publishable_Bs9RN_lqOeQD0974HzKF7w_-wFGsQBr';
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 let todos = [];
